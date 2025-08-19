@@ -1,0 +1,205 @@
+:root{
+    --first-color: rgba(80, 32, 80, 1);
+    --first-alpha-color: rgba(238, 104, 164, 1);
+    --second-color: rgba(147, 123, 146, 1);
+    --second-alpha-color: rgba(247, 242, 247, 1);
+    --third-color:rgb(255, 255, 255);
+    --first-font: League Spartan;
+    --second-font: Outfit, sans-serif;
+}
+
+/*RESET*/
+*{
+    font-family: var(--first-font);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*TEXT STYLES*/
+h1, h2, h3{
+    font-family: var(--first-font);
+    text-align: center;
+}
+
+h3{
+    font-weight: 500;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+}
+
+/*HEADER*/
+.title{
+    color: var(--first-color);
+    font-size: 2.5rem;
+    margin: 100px auto 0;
+    width: 70%;
+}
+
+.subtitle{
+    color: var(--second-color);
+    font-size: 1.2rem;
+    margin: 30px auto 50px;
+    width: 90%;
+}
+
+@media (min-width: 760px){
+    .principal{
+        display: flex;
+
+    }
+
+    .title{
+        font-size: 3rem;
+        text-align: left;
+        width: 50%;
+    }
+
+    .subtitle{
+        margin: 30px auto 50px;
+        text-align: left;
+        width: 50%;
+    }
+}
+
+/*REVIEWS*/
+.reviews{
+    color: var(--first-color);
+    margin: auto;
+    width: 90%;
+}
+
+.rated{
+    background-color: var(--second-alpha-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.rated img{
+    padding-bottom: 20px;
+    width: 1.75rem;;
+}
+
+@media (min-width: 760px){
+    .reviews{
+        margin-right: 120px;
+        width: 500px;
+    }
+
+    .first{
+        position: relative;
+        left: -150px;
+    }
+
+    .second{
+        position: relative;
+        left: -50px;
+    }
+
+    .third{
+        position: relative;
+        left: 100px;
+    }
+
+    .rated{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 35px;
+        padding: 12px 20px;
+    }
+
+    .rated img{
+        padding: 0;
+        width: 1.25rem;;
+    }
+}
+
+/*TESTIMONIALS*/
+.testimonials{
+    background-color: var(--first-color);
+    border-radius: 10px;
+    color: var(--third-color);
+    margin: 20px auto;
+    width: 340px;
+}
+
+.testimonial-client{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.testimonial-client h4{
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.testimonial-client img{
+    border-radius: 50%;
+    margin: 40px 30px;
+}
+
+.testimonial-client span{
+    color: var(--first-alpha-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.testimonials p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding: 0 40px 20px;
+}
+
+@media (min-width: 760px){
+    .testimonial{
+        display: flex;
+    }
+
+    .testimonials{
+        width: 450px;
+    }
+
+    .anne{
+        position: relative;
+        top: 100px;
+    }
+
+    .irene{
+        position: relative;
+        top: 200px;
+    }
+
+    .testimonial-client h4{
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .testimonial-client span{
+        font-size: 1.8rem;
+        line-height: 1.5;
+}
+
+    .testimonials p {
+        font-size: 1.25rem;
+        line-height: 1.6;
+    }
+}
+
+/*FOOTER*/
+.attribution{
+    position: relative;
+    top: 250px;
+}
