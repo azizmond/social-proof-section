@@ -166,10 +166,12 @@ body{
 @media (min-width: 760px){
     .testimonial{
         display: flex;
+        height: 600px;
     }
 
     .testimonials{
         width: 450px;
+        max-height: fit-content;
     }
 
     .anne{
@@ -196,10 +198,4 @@ body{
         font-size: 1.25rem;
         line-height: 1.6;
     }
-}
-
-/*FOOTER*/
-.attribution{
-    position: relative;
-    top: 250px;
 }
