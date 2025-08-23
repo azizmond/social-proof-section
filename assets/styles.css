@@ -166,7 +166,7 @@ body{
 @media (min-width: 760px){
     .testimonial{
         display: flex;
-        height: 600px;
+        /* height: 600px; */
     }
 
     .testimonials{
